@@ -1,8 +1,8 @@
 {
   "meta": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "schema_version": "1.0.0",
-    "last_updated": "2026-02-13",
+    "last_updated": "2026-05-07",
     "repository": "https://github.com/wyrdness/brownie",
     "maintainers": [
       {
@@ -16,72 +16,140 @@
       "content": "CC-BY-4.0"
     }
   },
+
   "phenomenon": {
     "id": "brownie",
     "name": "Brownie",
-    "aliases": [],
+    "aliases": [
+      { "name": "Brùnaidh", "language": "Scottish Gaelic" },
+      { "name": "Hob", "region": "Northern England", "meaning": "Regional English variant" },
+      { "name": "Hobgoblin", "region": "England", "meaning": "Often used interchangeably with brownie/hob" },
+      { "name": "Bwbach", "language": "Welsh", "region": "Wales" },
+      { "name": "Fenodyree", "language": "Manx", "region": "Isle of Man" },
+      { "name": "Ùruisg", "language": "Scottish Gaelic", "region": "Scottish Highlands" },
+      { "name": "Silkie", "region": "Northern England / Scottish Borders", "meaning": "Female variant in grey silk" }
+    ],
     "category": "FAE_FOLKLORE",
-    "subcategory": "of work",
+    "subcategory": "Household tutelary spirit",
     "tags": [
       "folklore",
-      "mythology"
+      "scottish",
+      "english",
+      "household-spirit",
+      "tutelary",
+      "fairy",
+      "domestic"
     ],
     "status": "documented",
     "description": {
-      "summary": "The Brownie is a household spirit from Scottish and Northern English folklore, characterized by its small stature (2-3 feet tall), brown or tanned skin, and ragged clothing.",
-      "full": "The Brownie is a household spirit from Scottish and Northern English folklore, characterized by its small stature (2-3 feet tall), brown or tanned skin, and ragged clothing. Brownies attach themselves to specific households or families and perform various chores while the family sleeps - threshing grain, cleaning, making repairs, and tending farm animals. They work in exchange for small offerings of food, typically cream, porridge, or bread left out at night. However, **offering direct payment or new clothes is considered a grave insult** that causes the Brownie to leave forever. In some traditions, an offended Brownie may transform into a mischievous Boggart. Brownies are described as shaggy and sometimes ugly in appearance, but their work is impeccable. They bond strongly to households and may stay for generations, becoming part of the family's lore and fortune."
+      "summary": "The brownie is a household tutelary spirit of Scottish and Northern English folklore — typically small, brown-skinned, hairy, and ragged — that performs farm and household labour at night in exchange for small offerings of cream, milk, or porridge, and that famously departs forever if offered new clothes or direct payment.",
+      "full": "The brownie (Scots: brownie; Scottish Gaelic: brùnaidh) is a household and farm tutelary spirit central to Scottish and Northern English folklore. Brownies attach themselves to a particular family or holding rather than to a place, and may follow a family across generations. They work exclusively at night while the household sleeps — threshing grain, churning butter, sweeping, brewing, mending tools, and tending livestock — in return for a customary 'brownie's bowl' of cream, fresh milk, oatmeal, or cake left at the hearth or by the threshold. The defining folkloric motif is the clothing taboo: a brownie offered new clothes (especially if those clothes are made too fine, or are paid wages rather than gifts) takes offence and leaves the household forever, often with a parting verse such as 'Red breeks and a ruffled sark! / Ye'll no get me to do your wark!' Other actions that drive a brownie away include criticism of its work, baptism, naming, or being seen at its labour. In some traditions, an angered brownie transforms into the malicious boggart. Reginald Scot's 'Discoverie of Witchcraft' (1584) provides the earliest English-language reference; King James VI's 'Daemonologie' (1597) frames brownies as demonic. The folklorist Katharine Briggs treated the brownie as a paradigmatic example of the British 'hobgoblin' family of solitary, ambivalent fairies. The figure is closely paralleled across Northern Europe by the Scandinavian tomte/nisse and the Slavic domovoi."
     },
     "etymology": {
-      "origin": "Unknown",
-      "meaning": "To be documented",
-      "first_use": "Unknown"
+      "origin": "From Scots 'brownie', a diminutive form referring to the creature's brown complexion; first attested in the early 16th century in the Scottish Lowlands.",
+      "meaning": "'Little brown one' — a reference to the brownie's brown skin and ragged brown clothing.",
+      "first_use": "Earliest English-language attestation in Reginald Scot, 'Discoverie of Witchcraft' (1584); Scots usage from the early 16th century."
     }
   },
+
   "classification": {
     "taxonomy": {
       "category": "FAE_FOLKLORE",
-      "type": "of work",
-      "subtype": "Unknown",
-      "variant": "Unknown"
+      "type": "Solitary fairy",
+      "subtype": "Hobgoblin / household tutelary",
+      "variant": "Scottish / Northern English"
     },
-    "related_phenomena": []
+    "related_phenomena": [
+      { "id": "boggart", "name": "Boggart", "relationship": "counterpart", "description": "A malicious household spirit; an offended brownie may become a boggart" },
+      { "id": "hob", "name": "Hob", "relationship": "regional_variant", "description": "Northern English equivalent of the brownie" },
+      { "id": "tomte", "name": "Tomte / Nisse", "relationship": "similar", "description": "Scandinavian household spirit with closely parallel functions" },
+      { "id": "domovoi", "name": "Domovoi", "relationship": "similar", "description": "Slavic household spirit with similar ambivalent role" },
+      { "id": "fenodyree", "name": "Fenodyree", "relationship": "regional_variant", "description": "Manx hairy household spirit" },
+      { "id": "bwbach", "name": "Bwbach", "relationship": "regional_variant", "description": "Welsh household brownie equivalent" },
+      { "id": "uruisg", "name": "Ùruisg", "relationship": "regional_variant", "description": "Highland Scottish half-man, half-goat household spirit" }
+    ]
   },
+
   "characteristics": {
     "physical": {
-      "features": [],
-      "morphology": "See README.md for detailed physical description"
+      "height": { "min": 0.6, "max": 0.9, "unit": "meters", "confidence": "low" },
+      "coloration": ["brown", "tan", "swarthy"],
+      "features": [
+        { "feature": "Small stature", "description": "Typically described as 2–3 feet tall, though some early accounts give human-sized brownies", "frequency": "common" },
+        { "feature": "Hairy / shaggy body", "description": "Body covered in coarse brown hair", "frequency": "common" },
+        { "feature": "Ragged clothing", "description": "Wears tattered brown rags, or appears naked; central to the clothing taboo", "frequency": "common" },
+        { "feature": "Ugly or grotesque face", "description": "Often described as wizened, with features 'unhuman'; Lowland brownies sometimes lack a nose, with only a single facial hole", "frequency": "occasional" }
+      ],
+      "morphology": "Variable across the tradition. Lowland brownies are short, hairy, and grotesque; Highland ùruisgean are taller, half-goat-like beings. Manx fenodyree are described as exceptionally strong. All forms share the brown colouration and night-working domesticity."
     },
-    "abilities": [],
+    "abilities": [
+      { "ability": "Domestic labour", "description": "Threshing grain, churning butter, brewing, sweeping, mending — performed silently at night", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Animal husbandry", "description": "Tending and protecting cattle and sheep on the farm", "frequency": "common", "evidence_level": "folklore" },
+      { "ability": "Invisibility / stealth", "description": "Brownies dislike being seen at their work and typically work unseen", "frequency": "always", "evidence_level": "folklore" },
+      { "ability": "Punitive mischief", "description": "Pinches, pokes, and breaks objects belonging to lazy or impious household members", "frequency": "occasional", "evidence_level": "folklore" },
+      { "ability": "Transformation into boggart", "description": "When badly offended a brownie may sour into a malicious household-haunting spirit", "frequency": "rare", "evidence_level": "folklore" }
+    ],
     "behavior": {
-      "activity_period": "unknown",
-      "disposition": "unknown",
-      "habitat_preference": []
+      "activity_period": "nocturnal",
+      "disposition": "neutral",
+      "social_structure": "solitary",
+      "habitat_preference": ["farmhouses", "country estates", "mills", "byres and barns"],
+      "patterns": [
+        "Bonds to a household or family across generations",
+        "Works only at night, unobserved",
+        "Accepts cream, milk, or oatmeal but refuses formal payment or clothing",
+        "Departs permanently when offered clothes or insulted"
+      ]
     }
   },
+
   "distribution": {
     "range": {
-      "description": "Unknown",
-      "continents": [],
-      "countries": [],
-      "regions": []
+      "description": "Native to Lowland and Highland Scotland and to Northern England, with regional cognates throughout the British Isles. The figure travelled with Scots and English emigrants to Ulster and to North America.",
+      "continents": ["Europe"],
+      "countries": ["Scotland", "England", "Wales", "Isle of Man", "Northern Ireland"],
+      "regions": [
+        "Scottish Lowlands",
+        "Scottish Borders",
+        "Scottish Highlands",
+        "Northern England (Yorkshire, Northumberland, Lancashire)",
+        "Wales",
+        "Isle of Man"
+      ]
     },
     "hotspots": [],
     "temporal": {
       "first_recorded": {
-        "date": "Unknown",
-        "circa": true,
-        "source": "Traditional folklore"
-      }
+        "date": "1584",
+        "circa": false,
+        "source": "Reginald Scot, 'The Discoverie of Witchcraft' (1584) — earliest English-language reference"
+      },
+      "peak_activity_periods": [
+        { "period": "16th–19th centuries", "description": "Living folklore on Scottish and Northern English farms" },
+        { "period": "1820–1920", "description": "Heyday of folklore collection (Hogg, Chambers, Briggs's later compilations)" }
+      ],
+      "seasonal_patterns": "Stories often cluster around harvest and threshing seasons, when the brownie's labour is most consequential."
     }
   },
+
   "history": {
     "origins": {
-      "cultural_roots": "Unknown",
-      "earliest_accounts": "See README.md for historical details",
-      "folklore_connections": "Unknown"
+      "cultural_roots": "Pre-Christian household tutelary tradition shared across Northern Europe, surviving through medieval Scots and English folk belief.",
+      "earliest_accounts": "Earliest written attestations in 16th-century Scottish and English texts; oral tradition is older.",
+      "folklore_connections": "Cognate with the Scandinavian tomte/nisse, Slavic domovoi, and Roman lares; part of a broad Indo-European household-spirit complex."
     },
-    "timeline": []
+    "timeline": [
+      { "date": "1584", "event": "Reginald Scot publishes 'The Discoverie of Witchcraft', containing the earliest English-language reference to brownies", "significance": "Anchors the term in the Anglophone literary record", "source": "Scot, R. (1584)" },
+      { "date": "1597", "event": "King James VI of Scotland publishes 'Daemonologie', describing brownies as demonic 'rough-men' performing household tasks", "significance": "Demonological framing influential on later witchcraft prosecutions", "source": "James VI of Scotland (1597)" },
+      { "date": "1818", "event": "James Hogg publishes 'The Brownie of Bodsbeck'", "significance": "Major Scottish-Romantic literary treatment of the brownie", "source": "Hogg, J. (1818)" },
+      { "date": "1865", "event": "Juliana Horatia Ewing publishes the children's story 'The Brownies'", "significance": "Reframes brownies for Victorian children's literature; later inspires the Girl Guides 'Brownies' section", "source": "Ewing, J. H. (1865)" },
+      { "date": "1919", "event": "The Girl Guides organisation introduces the 'Brownies' section, named after Ewing's story", "significance": "Brings the term into 20th-century mass culture", "source": "Girl Guides historical record" },
+      { "date": "1959", "event": "Katharine Briggs publishes 'The Anatomy of Puck', her foundational study of British fairies including brownies", "significance": "Establishes the modern scholarly framework", "source": "Briggs, K. (1959)" },
+      { "date": "1976", "event": "Briggs publishes 'A Dictionary of Fairies', the standard reference for brownies and related beings", "significance": "Canonical reference work", "source": "Briggs, K. (1976)" }
+    ],
+    "modern_era": "The brownie survives in three overlapping modern forms: as a folkloric subject in Briggs-era and post-Briggs folklore studies; as a children's-literature trope (Ewing, Palmer Cox's late-19th-century 'Brownies', and modern fantasy such as J. K. Rowling's house-elves and Holly Black's faeries); and as a regional cultural emblem in parts of Scotland and Northern England. The clothing-taboo motif has become a stock element of contemporary fantasy."
   },
+
   "sightings": {
     "statistics": {
       "total_documented": 0,
@@ -92,35 +160,120 @@
     "notable": [],
     "database_path": "./sightings/"
   },
+
   "evidence": {
     "physical": [],
     "photographic": [],
     "video": [],
     "audio": [],
-    "trace": []
+    "trace": [],
+    "documentary": [
+      {
+        "id": "brownie-evidence-scot-1584",
+        "type": "treatise",
+        "name": "The Discoverie of Witchcraft",
+        "date": "1584",
+        "description": "Reginald Scot's skeptical treatise on witchcraft, containing the earliest English reference to brownies.",
+        "status": "verified",
+        "analysis": "Earliest written attestation; Scot uses brownies as an example of imagined supernatural beings.",
+        "source": "Scot, R. (1584)"
+      },
+      {
+        "id": "brownie-evidence-briggs-1976",
+        "type": "reference work",
+        "name": "A Dictionary of Fairies",
+        "date": "1976",
+        "description": "Katharine Briggs's encyclopedic dictionary of British fairy tradition.",
+        "status": "verified",
+        "analysis": "Standard scholarly reference; collates brownie traditions across regions.",
+        "source": "Briggs, K. (1976)"
+      }
+    ]
   },
+
   "theories": {
-    "paranormal": [],
+    "paranormal": [
+      {
+        "name": "Tutelary household spirit",
+        "description": "Folkloric framing: the brownie is a real ambivalent spirit that bonds with a household and must be respected by reciprocal hospitality.",
+        "proponents": ["Folkloric tradition", "Katharine Briggs (descriptive)"],
+        "evidence_cited": ["Wide regional consistency of the tradition", "Reciprocal-offering practices documented in agricultural communities"]
+      }
+    ],
     "scientific": [],
-    "skeptical": []
+    "skeptical": [
+      {
+        "name": "Personification of household labour",
+        "description": "Folklorists such as L. F. Newman read the brownie as the personification of the ideal pre-industrial servant — embodying invisible domestic labour and the reciprocal obligations of farm life.",
+        "proponents": ["L. F. Newman", "Katharine Briggs (functionalist reading)"],
+        "evidence_cited": ["Functional fit between brownie behaviours and unrewarded household labour", "Disappearance of brownies with industrialization"]
+      },
+      {
+        "name": "Ancestral / death-related origin",
+        "description": "Some scholars connect brownies with Roman lares and other ancestor-spirit traditions, treating the brownie as a faded household ancestor cult.",
+        "proponents": ["Comparative folklorists"],
+        "evidence_cited": ["Parallel between brownie and Roman lares familiares", "Briggs's note on death-associations"]
+      }
+    ]
   },
+
   "cultural": {
     "folklore": {
-      "traditions": [],
-      "stories": [],
-      "beliefs": "See README.md for cultural context"
+      "traditions": [
+        "Scottish Lowland brownie traditions",
+        "Highland ùruisg traditions",
+        "Northern English hob traditions",
+        "Welsh bwbach traditions",
+        "Manx fenodyree traditions"
+      ],
+      "stories": [
+        "The Brownie of Bodsbeck (James Hogg, 1818)",
+        "The Brownie of Blednoch (William Nicholson, 1828)",
+        "The Cauld Lad of Hilton — clothing-taboo tale",
+        "The Brownie of Cranshaws — angered by criticism, scatters the harvest"
+      ],
+      "beliefs": "Households left a 'brownie's bowl' of cream or oatmeal at the hearth or threshold; offering wages or new clothes was understood to drive the brownie away. The tradition reinforces hospitality and the moral economy of the farm."
     },
     "popular_culture": {
-      "literature": [],
-      "film_tv": [],
-      "games": [],
-      "other": []
+      "literature": [
+        "The Brownie of Bodsbeck — James Hogg (1818)",
+        "The Brownies and Other Tales — Juliana Horatia Ewing (1865)",
+        "The Brownies (illustrated poetry series) — Palmer Cox (1880s–1900s)",
+        "A Dictionary of Fairies — Katharine Briggs (1976)"
+      ],
+      "film_tv": [
+        "Willow (1988) — features brownies as small fairy characters",
+        "The Spiderwick Chronicles (book and 2008 film) — features the brownie/boggart Thimbletack"
+      ],
+      "games": [
+        "Brownies appear in Dungeons & Dragons monster manuals",
+        "Featured in numerous folklore-derived video games (e.g., The Witcher series related fae)"
+      ],
+      "music": [],
+      "other": [
+        "Girl Guides 'Brownies' section (introduced 1919, named for Ewing's story)",
+        "Eastman Kodak 'Brownie' camera (1900) — named after Palmer Cox's characters"
+      ]
     }
   },
+
   "research": {
-    "researchers": [],
-    "organizations": [],
-    "ongoing_studies": "None documented"
+    "researchers": [
+      { "name": "Katharine M. Briggs", "affiliation": "Folklore Society (UK)", "contribution": "Foundational comparative scholarship on brownies and British fairy tradition, especially 'A Dictionary of Fairies' (1976)", "period": "1950s–1980s" },
+      { "name": "L. F. Newman", "affiliation": "British folklore studies", "contribution": "Functionalist analysis of the brownie as personification of the ideal servant", "period": "Mid-20th century" },
+      { "name": "James Hogg", "affiliation": "Scottish writer and folklore collector", "contribution": "Romantic-era literary treatment of the brownie tradition", "period": "Early 19th century" }
+    ],
+    "organizations": [
+      { "name": "The Folklore Society (UK)", "url": "https://folklore-society.com/", "focus": "Scholarly study of British folklore including brownies" }
+    ],
+    "ongoing_studies": "Ongoing folklore-studies analysis of British household tutelary traditions; comparative work linking brownie traditions to Norse and Slavic household spirits."
   },
-  "sources": []
+
+  "sources": [
+    { "id": "wikipedia-brownie", "type": "website", "title": "Brownie (folklore)", "publication": "Wikipedia", "url": "https://en.wikipedia.org/wiki/Brownie_(folklore)", "accessed": "2026-05-07" },
+    { "id": "briggs-1976", "type": "book", "title": "A Dictionary of Fairies: Hobgoblins, Brownies, Bogies and Other Supernatural Creatures", "authors": ["Katharine Briggs"], "publication": "Allen Lane", "date": "1976", "isbn": "978-0713909661" },
+    { "id": "briggs-1959", "type": "book", "title": "The Anatomy of Puck: An Examination of Fairy Beliefs Among Shakespeare's Contemporaries and Successors", "authors": ["Katharine Briggs"], "publication": "Routledge & Kegan Paul", "date": "1959" },
+    { "id": "scot-1584", "type": "book", "title": "The Discoverie of Witchcraft", "authors": ["Reginald Scot"], "publication": "London", "date": "1584" },
+    { "id": "hogg-1818", "type": "book", "title": "The Brownie of Bodsbeck and Other Tales", "authors": ["James Hogg"], "publication": "William Blackwood", "date": "1818" }
+  ]
 }
